@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTSTAR</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            background:linear-gradient(45deg,rgb(91, 28, 38),rgb(202, 66, 88),pink);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .navbar{
+            background-color: black;
+            align-items: center;
+            justify-content: space-around;
+            padding: 15px 0px;
+            display: flex;
+            position: fixed;
+            width: 100%;
+            top:0;
+
+        }
+        /*combinator*/
+        .nav-item a{
+            text-decoration: none;
+            color: whitesmoke;
+            margin: 20px 10px;
+        }
+        .logo{
+            margin-right: 350px;
+        }
+        .nav-item a:hover{
+            text-decoration: underline;
+        }
+        h2{
+            color: aliceblue;
+            text-decoration: underline;
+        }
+        h2:hover{
+            color:blue;
+            text-decoration: underline;
+        }
+        .newmovie img{
+            padding: 6px;
+        }
+        .newmovie{
+            margin-left: 30px;
+        }
+        .favs img{
+            padding: 6px;
+        }
+        .favs{
+            margin-left: 30px;
+        }
+        .newmovie,.favs,.choice{
+            margin-top: 15px;
+            margin-left: 45px;
+        }
+        .home img:hover{
+            transform: scale(1,1);
+            transition: ease;
+            border-radius: 10px;
+        }
+        .newmovie img:hover{
+            transform: scale(2,2);
+            transition: ease;
+            border-radius: 10px;
+        }
+        .Favs img:hover{
+            transform: scale(2,2);
+            transition: ease;
+            border-radius: 10px;
+        }
+        .choice img:hover{
+            transform: scale(2,2);
+            transition: ease;
+            border-radius: 10px;
+        }
+    </style> 
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg" 
+                     alt="">
+        </div>
+        <div class="nav-item">
+            <ul>
+                <a href="#home">Home</a>
+                <a href="#newmovie">Newly Arrived</a>
+                <a href="#Favs">Favourites</a>
+                <a href="#choice">Kannada</a>
+                <a href="#">Tamil</a>
+                <a href="#">About</a>
+                <a href="#">Sign-in</a>
+            </ul>
+        </div>
+    </div>
+    <div class="home" id="home">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/2780/1312780-h-ec3ea54e24a2
+            " alt="" width="100%">
+            </div>
+            <h2>New Movie Arrived</h2>
+    
+    <div class="newmovie" id="newname">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/2520/1072520-v-9a336b255ef4" alt="" width="18%">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/9247/299247-v" alt="" width="18%">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/old_images/vertical/MOVIE/2465/1000172465/1000172465-v" alt="" width="18%">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/old_images/vertical/MOVIE/6210/1000036210/1000036210-v" alt="" width="18%">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/7599/677599-v" alt="" width="18%">
+    </div>
+    <h2>Favourites</h2>
+    <div class="Favs" id="Favs">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/2520/1072520-v-9a336b255ef4" alt="" width="18.5%">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/9247/299247-v" alt="" width="18.5%">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/old_images/vertical/MOVIE/2465/1000172465/1000172465-v" alt="" width="18.5%">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/old_images/vertical/MOVIE/6210/1000036210/1000036210-v" alt="" width="18.5%">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/7599/677599-v" alt="" width="18.5%">
+    </div>
+
+    <h2>My Choice</h2>
+    <div class="choice" id="choice">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/1341/1091341-h-0c4699c4630e" alt="" width="19.1%">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/9298/1039298-h-4cac45a71e03" alt=""  width="19.1%">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/4636/674636-h" alt=""  width="19.1%">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/4384/674384-h" alt=""  width="19.1%">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/5586/675586-h" alt=""  width="19.1%">  
+    </div>
+</body>
+</html>
+
